@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WASM Image Processor</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#4a90e2" />
+  <link rel="icon" href="/favicon.svg" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background: #f0f0f0;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type=file] {
+      margin: 1rem 0;
+    }
+    button {
+      margin: 0.5rem;
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #4a90e2;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #357ab8;
+    }
+    img {
+      margin-top: 1rem;
+      max-width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-D_R-O-Ou.js"></script>
+<link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
+<body>
+  <div class="container">
+    <h1>WASM Image Processor</h1>
+    <input type="file" id="upload" />
+    <div>
+      <button id="grayscale">Grayscale</button>
+      <button id="blur">Blur</button>
+      <button id="invert">Invert</button>
+      <button id="brighten">Brighten</button>
+      <button id="flip">Flip Horizontally</button>
+      <button id="rotate">Rotate 90º</button>
+    </div>
+    <button id="download">Guardar Imagen</button>
+    <img id="preview" alt="Preview" />
+  </div>
+</body>
+</html>
